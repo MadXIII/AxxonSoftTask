@@ -39,6 +39,7 @@ func (t *Tools) PrepareResponseToStore(resp *http.Response) (model.Response, err
 	}
 
 	filled := fillResponse(uinqID, resp)
+
 	t.repo.AddResponse(filled)
 
 	return filled, nil

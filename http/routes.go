@@ -7,7 +7,7 @@ import (
 	"github.com/madxiii/axxonsofttask/service"
 )
 
-var wrongMehtod []byte = []byte("only GET method is allowed")
+var wrongMethod []byte = []byte("only GET method is allowed")
 
 type Handler struct {
 	service service.Service

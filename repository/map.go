@@ -21,10 +21,12 @@ func NewHashMap() *HashMap {
 		resMap: make(map[string]model.Response),
 	}
 }
+
 func (h *HashMap) AddRequest(id string, data model.Request) {
 	h.reqMap[id] = data
 	fmt.Printf("Request is stored in map by id: %s\n", id)
 }
+
 func (h *HashMap) AddResponse(data model.Response) {
 	h.resMap[data.ID] = data
 	fmt.Printf("Response is stored in map by id: %s\n", data.ID)

@@ -23,6 +23,6 @@ func (h *Handler) Request(w http.ResponseWriter, r *http.Request) {
 
 		okResponse(w, http.StatusOK, slice)
 	default:
-		wrongMethodResponse(w, http.StatusMethodNotAllowed, wrongMehtod)
+		wrongMethodResponse(w, http.StatusMethodNotAllowed, wrongMethod)
 	}
 }

@@ -20,6 +20,6 @@ func main() {
 
 	serv := new(server.Server)
 	if err := serv.Run(address, handler); err != nil {
-		log.Fatalf("error occured while running server: %s", err.Error())
+		log.Fatalf("error occured while running server: %s\n", err.Error())
 	}
 }

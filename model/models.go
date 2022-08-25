@@ -1,7 +1,6 @@
 package model
 
 type Request struct {
-	ID      int64               `json:"id"`
 	URL     string              `json:"url"`
 	Method  string              `json:"method"`
 	Headers map[string][]string `json:"headers"`
